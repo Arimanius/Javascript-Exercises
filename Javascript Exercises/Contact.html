@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nous contacter</title>
+</head>
+<body>
+  <h2>Vos coordonnées :</h2>
+  <form id="Contact" action="http://bienvu.net/script.php" method="post">
+  <p>* Ces zones sont obligatoires pour envoyer le formulaire.</p>
+
+  <label for="société">Société * :</label> 
+  <input type="text" name="société" id="société">
+  <br>
+  <label for="personne_contact">Personne à contacter * :</label>
+  <input type="text" name="personne_contact" id="personne_contact">
+  <br>
+  <label for="adresse_entreprise">Adresse de l'entreprise :</label>
+  <br>
+  <textarea name="adresse_entreprise" id="adresse_entreprise" cols="30" rows="3"></textarea>
+  <br>
+  <label for="code_postal">Code Postal * :</label>
+  <input type="text" name="code_postal" id="code_postal">
+  <br>
+  <label for="ville">Ville * :</label>
+  <input type="text" name="ville" id="ville">
+  <br>
+  <label for="mail">E-mail * :</label>
+  <input type="text" name="mail" id="mail">
+  <br>
+  <label for="téléphone">Téléphone :</label>
+  <input type="text" name="téléphone" id="téléphone">
+  <br>
+  <label for="environnement_technique">Sélectionnez l'environnement technique du projet :</label>
+  <select name="environnement_technique" id="environnement_technique">
+    <option value= "choisissez" disabled selected>Choisissez</option>
+    <option value="access">Access</option>
+    <option value="java">Java</option>
+    <option value="delphi">Delphi</option>
+    <option value="windev">Windev</option>
+    <option value="visualbasic">Visual Basic</option>
+    <option value="powerbuilder">Power Builder</option>
+    <option value="internet">Internet</option>
+    <option value="intranet">Intranet</option>
+    <option value="windowsnt">Windows NT</option>
+    <option value="unix">Unix</option>
+    <option value="sqlserver">SQL Server</option>
+    <option value="oracle">Oracle</option>
+    <option value="autres...">Autres...</option>
+  </select>
+  <br>
+  <textarea name="environnement" id="environnement" cols="30" rows="3"></textarea>
+  <br>
+  <button type="submit">Envoyer</button>
+  <button id="cancel" type="reset">Effacer</button>
+  </form>
+  <script src="script2.js"></script>
+</body>
+</html>
